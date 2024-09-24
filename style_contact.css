@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Section Styles */
+.section {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links Section */
+#links ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#links ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#links ul li a {
+    font-size: 1.2em;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+#links ul li a:hover {
+    color: #0056b3;
+}
+
+/* Contact Form */
+#form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form label {
+    font-weight: bold;
+}
+
+#form input,
+#form textarea {
+    width: 100%;
+    padding: 10px;
+    max-width: 775px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#form input:focus,
+#form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form button:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .section {
+        padding: 15px;
+    }
+
+    #links ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}

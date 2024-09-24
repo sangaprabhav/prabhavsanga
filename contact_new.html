@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="contact-container">
+        <h2>Get In Touch</h2>
+        <p>Always up for quick chats on trending topics.</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/meojbgaz" method="POST" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Please enter first name..." required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Please enter last name..." required>
+                </div>
+            </div>
+            <br>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Please enter email..." required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Please enter phone number..." required>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="message">What do you have in mind ?</label>
+                <textarea id="message" name="message" rows="8" placeholder="Please enter query..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="https://github.com/sangaprabhav"><img src="Assets/github_w.png" alt="GitHub"></a>
+        <a href="#"><img src="Assets/gmail_w.png" alt="Mail"></a>
+    </div>
+</body>
+</html>
